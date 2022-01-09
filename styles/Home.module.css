@@ -12,6 +12,13 @@
   align-items: center;
 }
 
+.hero {
+  display: block;
+  width: 1250px;
+  height: 600px;
+  text-align: center;
+}
+
 .footer {
   display: flex;
   flex: 1;
