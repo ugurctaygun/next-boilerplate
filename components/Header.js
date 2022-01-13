@@ -13,6 +13,11 @@ const Header = () => (
           <a>About</a>
         </Link>
       </li>
+      <li>
+        <Link href="/product-list">
+          <a>Products</a>
+        </Link>
+      </li>
     </ul>
   </header>
 );
