@@ -1,11 +1,10 @@
 import Link from "next/link";
+import styles from "./Products.module.css";
 
-export default function ProductDetail({ products }) {
+export default function ProductDetail() {
   return (
-    <li>
-      <Link href="/product/[id]" as={`/product/${products.id}`}>
-        <a>{products.name}</a>
-      </Link>
-    </li>
+    <div className={styles.detailContainer}>
+      <h1>Luke</h1>
+    </div>
   );
 }

@@ -1,6 +1,6 @@
 import { product } from "../../../data";
 
-export default function personHandler({ query: { id } }, res) {
+export default function productHandler({ query: { id } }, res) {
   const filtered = product.filter((p) => p.id === id);
 
   // User with id exists

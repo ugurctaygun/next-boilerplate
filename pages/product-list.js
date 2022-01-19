@@ -1,5 +1,7 @@
 import useSWR from "swr";
-import ProductDetail from "../components/ProductDetail";
+import ProductCard from "../components/ProductCard";
+import styles from "../components/Products.module.css";
+import Filter from "../components/Filter";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
@@ -10,11 +12,14 @@ function ProductList() {
   if (!data) return <div>Loading...</div>;
 
   return (
-    <ul>
-      {data.map((p, i) => (
-        <ProductDetail key={i} products={p} />
-      ))}
-    </ul>
+    <div className={styles.container}>
+      <Filter data={data} />
+      <div className={styles.container}>
+        {data.map((p, i) => (
+          <ProductCard key={i} products={p} />
+        ))}
+      </div>
+    </div>
   );
 }
 

@@ -1,0 +1,12 @@
+.header {
+  width: 100%;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+}
+
+.header ul li {
+  margin-right: 25px;
+}
